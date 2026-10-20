@@ -1,0 +1,32 @@
+GOL MARKAZI — ISHGA TUSHIRISH
+
+1-YO'L (eng oson, internet va npm kerak emas):
+  dist papkasidagi index.html faylini brauzerda oching (ikki marta bosing). Chrome tavsiya etiladi.
+
+2-YO'L (kodni o'zgartirmoqchi bo'lsangiz):
+  1. Node.js o'rnating (18 yoki yuqori): https://nodejs.org
+  2. Terminalda shu papkada:  npm install
+  3. Keyin:  npm run dev      (brauzerda http://localhost:5173)
+  Tayyor sayt qilish (dist ni yangilash):  npm run build
+
+ROLLAR
+  - Buyurtma beruvchi: istagancha odam ro'yxatdan o'ta oladi. Demo: 900000001, parol demo123.
+  - Qabul qiluvchi: faqat BITTA odam ro'yxatdan o'ta oladi (birinchi bo'lib o'tgan). Keyin boshqalar qo'sha olmaydi.
+    Qabul qiluvchini qaytadan boshlash uchun brauzerda F12 > Console ga:  localStorage.clear()  yozing.
+
+MAYDON RASMLARINI KOD ORQALI ALMASHTIRISH (eng oson)
+  dist/images.js faylini Bloknot bilan oching. 50 qator = 50 maydon. Kerakli qatorni o'zgartiring,
+  masalan:  'img/fields/field-1.jpg'  ->  'img/fields/mening-rasmim.jpg'  yoki  'https://sayt.com/rasm.jpg'
+  Saqlang va brauzerda Ctrl+Shift+R bosing. npm yoki qayta build kerak emas.
+  (npm run dev ishlatsangiz, fayl public/images.js)
+
+RASMLAR (hammasini o'zingiz almashtira olasiz) — public/img papkasi
+  logo.jpg ............. logotip (yumaloq ko'rinadi)
+  bg-login.jpg ......... birinchi ekran katta banneri
+  bg-hero.jpg .......... saytning ichidagi yuqori banner
+  default.jpg .......... rasm topilmasa chiqadi
+  fields/field-1.jpg ... field-50.jpg ... maydon rasmlari
+  dist ishlatsangiz, xuddi shu fayllar dist/img ichida. Maydon rasmlarini tez almashtirish: my-images papkasiga
+  rasm tashlab, terminalda  npm run rasm
+
+Maydon nomi, manzili, narxi: src/data/fields.js (yoki Qabul qiluvchi panelida tahrirlash).
